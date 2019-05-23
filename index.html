@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ajax_Calendar_AR</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="container_mesi">
+        <i class="fas fa-chevron-left left fa-2x"></i>
+        <i class="fas fa-chevron-right right fa-2x"></i>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+    <script id="template_calendar" type="text/x-handlebars-template">
+      <h1>{{mese}}</h1>
+      <ul id="giorni_calendario">
+        <li>{{giorni}}</li>
+      </ul>
+    </script>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+body{
+  font-family: 'Roboto Mono', monospace;
+}
 .container{
   padding: 10px;
   width: 100%;
@@ -18,6 +21,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  background-color: #ffcccc;
 }
 .container i{
   position: absolute;
@@ -35,9 +39,11 @@
 }
 #giorni_mesecorrente{
   list-style-type: none;
+  width: 30%;
 }
 #giorni_mesecorrente li{
-padding: 1px 0;
+  padding: 0.5px 0;
+  text-align: left;
 }
 .red{
   color: red;
